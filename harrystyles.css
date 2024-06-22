@@ -2,20 +2,18 @@
     font-family: 'Poppins-Regular';
     src: local('Poppins-Regular');
 }
-
 body {
     font-family: 'Poppins-Regular', sans-serif;
 }
-
 #event-section {
     position: relative;
     color: rgb(0, 0, 0);
-    background-image: url('Bildmaterial/Next Events_Header.jpg');
-    background-size: 100%;
+    background-image: url('Bildmaterial/Index/Next\ Events_Header.jpg');
     background-position: center;
+    background-size: 100%;
+    min-height: 70%;
     background-repeat: no-repeat;
 }
-
 .overlay {
     margin-top: 15%;
     margin-bottom: 5%;
@@ -24,43 +22,45 @@ body {
     padding: 40px;
     border-radius: 10px;
 }
-
+@media (max-width: 768px) {
+    .overlay {
+        width: 70%;
+        padding-top: 200px;
+    }
+}
 #description-section {
     font-size: 1rem;
 }
-
 #more-info-section .info-box {
     text-align: center;
     margin-bottom: 20px;
 }
-
 #more-info-section .info-box img {
     border-radius: 5px;
     margin-bottom: 10px;
 }
-
 #more-info-section .info-box p {
     font-size: 1.2rem;
     margin: 5px 0;
 }
-
 #more-info-section .info-box a {
     font-size: 1.5rem;
 }
-a{
+a {
     text-decoration: none;
+    color: black;
 }
-.btn-group{
+.btn-group {
     position: absolute;
-    top: 100%; 
-    left: 90%; 
-    transform: translate(-50%, -50%); 
-    background-color: #fff; 
-    color: #fff; 
-    padding: 10px 10px; 
-    font-size: 20px; 
+    top: 100%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 20px;
     text-align: center;
-    border: none;
+    border-radius: 60px;
 }
 .col-5 {
     display: flex;
@@ -71,23 +71,32 @@ a{
 }
 .row {
     height: 100px;
-}
-.container{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#zjtimg{
-    height: 60%;
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#zjtimg {
     width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#zjt{
+@media (max-width: 768px) {
+    #zjtimg {
+      width: 80%;
+      display: block;
+      margin: 0 auto; 
+    }
+}
+#zjt {
     background-color: #DF3635;
     height: 200px;
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: center;
     border: solid;
@@ -95,14 +104,20 @@ a{
     border-width: 5px;
     border-left: 0px;
 }
-
-#induimg{
-    width: 30%;
+#induimg {
+    width: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#indu{
+@media (max-width: 768px) {
+    #induimg {
+      width: 80%;
+      display: block;
+      margin: 0 auto; 
+    }
+}
+#indu {
     background-color: #F26BFF;
     height: 100px;
     display: flex;
@@ -113,19 +128,19 @@ a{
     border-width: 5px;
     border-right: 0px;
 }
-@media only screen and (max-width: 767px) {
-#jazimg{
-    height: 36.2%;
-    width: 17.25%;
-}
-}
-#jazimg{
-    width: 15%;
+
+#jazimg {
+    width: 13%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#jaz{
+@media only screen and (max-width: 767px) {
+    #jazimg {
+        width: 80%;
+    }
+}
+#jaz {
     background-color: #8FDAEE;
     height: 100px;
     display: flex;
@@ -137,14 +152,14 @@ a{
     border-top: 2.5px;
     border-right: 0px;
 }
-.nachsterevent{
+.nachsterevent {
     display: flex;
     justify-content: center;
     align-items: center;
     align-self: center;
     background-image: url(Bildmaterial/Index/Next\ Events_Header.jpg);
 }
-.grey{
+.grey {
     background-color: rgba(232, 232, 217, 0.75);
     width: 40%;
     display: grid;
@@ -155,7 +170,7 @@ a{
     border-radius: 30px;
 }
 @media only screen and (max-width: 767px) {
-    .grey{
+    .grey {
         background-color: rgba(232, 232, 217, 0.75);
         width: 70%;
         display: grid;
@@ -166,22 +181,23 @@ a{
         border-radius: 30px;
     }
 }
-.btn-primary{
+.btn-primary {
     background-color: #DF3635;
     border: none;
 }
-.taten{
+.taten {
     text-align: center;
     display: grid;
     width: 70%;
 }
-h1{
+h1 {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-top: 300px;
 }
-h2{
+h2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -191,15 +207,15 @@ h2{
 .col-sm-4 {
     display: flex;
 }
-header{
-width: 100%;
-background-color: #f8f9fa;
-position: fixed;
-top: 0;
-left: 0;
-z-index: 1000;
+header {
+    width: 100%;
+    background-color: #f8f9fa;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
-p{
+p {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -207,8 +223,131 @@ p{
     width: 50%;
     margin-left: 25%;
 }
-span{
-    position: absolute;
-    right: 0;
-    padding-right: 10px;
+@media (max-width: 768px) {
+    p {
+        width: 70%;
+        margin-left: 15%;
+    }
 }
+.card {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 35px;
+}
+.card-body {
+    position: relative;
+}
+.card-body a {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.card-body {
+    margin: 20px;
+}
+.card-img-top {
+    border-radius: 35px;
+}
+.pfeil {
+    color: black;
+    margin-bottom: 15px;
+}
+#foot{
+    padding: 20px 0;
+    margin-top: 20px;
+}
+img{
+    display: flex;
+    align-items: start;
+    justify-content: left;
+    background-color: none;
+}
+@media only screen and (max-width: 767px) {
+    .footer-image {
+        width: 100%;
+    }
+}
+.footer-image {
+    width: 30%;
+    align-items: start;
+    align-content: start;
+    justify-content: first baseline;
+}
+h6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.btn .btn-secondary .button{
+    background-color: none;
+    border: none;
+}
+.foot{
+    margin-top: -20px;
+}
+.projects button:focus + ul, .labs button:focus + ul {
+    opacity: 1;
+    pointer-events: all; // This is no longer the case when the focus is lost
+    transform: translateY(0px);
+}
+.card-text{
+    display: flex;
+    align-items: start;
+    justify-content: left;
+}
+
+.card-text {
+    text-align: left;
+}
+hr{
+    margin-top: 50px;
+}
+
+form{
+    width: 70%;
+}
+footer{
+    margin-top: 300px;
+}
+.top{
+    padding-top: 10px;
+}
+.card-text{
+    margin-left: 0%;
+    width: 100%;
+}
+.iframe{
+    border-radius: 10px;
+}
+.col-md-2{
+    margin-top: 20px;
+}
+.horizontal-line {
+    width: 100%;
+    height: 1px;
+    background-color: black; 
+    margin: 20px 0; 
+    margin-top: 1020px;
+}
+@media (max-width: 600px) {
+    .horizontal-line {
+      margin-top: 3800px; }
+    }
+  .horizontal-line-mitglied{
+    width: 100%;
+    height: 1px;
+    background-color: black; 
+    margin: 20px 0; 
+    margin-top: 400px;
+  }
+  .horizontal-line-index{
+    width: 100%;
+    height: 1px;
+    background-color: black; 
+    margin: 20px 0; 
+    margin-top: 0px;
+  }
+
