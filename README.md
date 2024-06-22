@@ -9,6 +9,7 @@ In unseren Team befinden sich Lisa Richenberger, Amélie Gillier und Enya Ruzza.
 
 ---
 Website Abweichungen:
+
 "Mehr zum Verein Kacheln Layout": Die Kacheln werden in der mobilen Ansicht untereinander dargestellt. Dies sorgt für eine übersichtlichere Darstellung und eine bessere Benutzererfahrung, da der verfügbare Platz optimal genutzt wird und die Inhalte leichter lesbar sind.
 
 Footer: Es gab für uns mehr Sinn, die Elemente untereinander anzuordnen, da auf diese Weise der Text besser lesbar ist. Die Schriftgröße war zu klein, um dies in einer nebeneinander angeordneten Ansicht zu ermöglichen.
