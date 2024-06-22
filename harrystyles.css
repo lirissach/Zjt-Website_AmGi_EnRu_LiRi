@@ -348,3 +348,6 @@ footer{
     margin: 20px 0; 
     margin-top: 0px;
   }
+.dropdown-item{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
